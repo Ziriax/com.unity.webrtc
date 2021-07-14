@@ -291,7 +291,7 @@ extern "C"
         context->StopMediaStreamTrack(track);
     }
 
-    UNITY_INTERFACE_EXPORT::webrtc::MediaStreamTrackInterface* ContextCreateAudioTrack(Context* context, const char* label)
+    UNITY_INTERFACE_EXPORT ::webrtc::MediaStreamTrackInterface* ContextCreateAudioTrack(Context* context, const char* label)
     {
         return context->CreateAudioTrack(label);
     }
